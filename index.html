@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="weather-app-city"></h1>
+            <p class="weather-app-details">
+              <span class="weather-app-details-time" id="time"></span>
+              <span
+                class="weather-app-details-condition"
+                id="description"
+              ></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div>
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                class="weather-app-image"
+                id="weather-app-image"
+              />
+            </div>
+            <span class="temperature-value" id="temperature-value"></span
+            ><span class="temperature-unit">°C</span>
+          </div>
+        </div>
+        <br />
+        <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Tue</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                <div  class="weather-forecast-temperature"><strong>15°</strong></div>
+                <div class="weather-forecast-temperature">9°</div></div>
+              </div>
+              <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Wed</div>
+                <div class="weather-forecast-icon">🌤️</div>
+                <div class="weather-forecast-temperatures">
+                  <div  class="weather-forecast-temperature"><strong>15°</strong></div>
+                  <div class="weather-forecast-temperature">9°</div></div>
+                </div>
+                <div class="weather-forecast-day">
+                  <div class="weather-forecast-date">Thu</div>
+                  <div class="weather-forecast-icon">🌤️</div>
+                  <div class="weather-forecast-temperatures">
+                    <div  class="weather-forecast-temperature"><strong>15°</strong></div>
+                    <div class="weather-forecast-temperature">9°</div></div>
+                  </div>
+                  <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Fri</div>
+                    <div class="weather-forecast-icon">🌤️</div>
+                    <div class="weather-forecast-temperatures">
+                      <div  class="weather-forecast-temperature"><strong>15°</strong></div>
+                      <div class="weather-forecast-temperature">9°</div></div>
+                    </div>
+                    <div class="weather-forecast-day">
+                      <div class="weather-forecast-date">Sat</div>
+                      <div class="weather-forecast-icon">🌤️</div>
+                      <div class="weather-forecast-temperatures">
+                        <div  class="weather-forecast-temperature"><strong>15°</strong></div>
+                        <div class="weather-forecast-temperature">9°</div></div>
+                      </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Rachael-91" target="_blank"
+          >Rachael Alexander</a
+        >
+        and is
+        <a href="" target="_blank">open-sourced on Github</a>
+        and
+        <a href="" target="_blank">hosted on Netlify.</a>
+      </footer>
+    </div>
+    <script src="src/iindex.js"></script>
+  </body>
+</html>
